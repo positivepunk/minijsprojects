@@ -1,0 +1,200 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "poppins",sans-serif;
+    box-sizing:border-box;
+    
+}
+body{
+    background: darkcyan;
+    zoom:70%;
+}
+
+.app{
+    background: white;
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    padding: 30px;
+    border-radius: 10px;
+    
+}
+.app h1{
+    
+    font-size: 30px;
+    margin-top: 20px;
+    border-bottom: 1px solid grey;
+    padding:30px;
+    font-weight: 600;
+}
+.app h2{
+    margin-top: 5px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.quiz{
+    padding:20px 0;
+}
+.quiz h2{
+    font-size: 18px;
+    color: brown;
+    font-weight: 600;
+}
+
+.category-selection{
+    font-size: 25px;
+    border-radius: 20px;
+    padding:10px;
+    font-weight: 600;
+    background: rgb(59, 239, 28);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.question-count,.difficulty-selection{
+    margin-top: 20px;
+    font-size: 25px;
+    border-radius: 20px;
+    padding:10px;
+    font-weight: 600;
+    background: rgb(59, 239, 28);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.category-selection select{
+    flex:1;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 20px;
+    padding:10px;
+    margin-left: 5px;
+    background: rgb(231, 241, 245);
+}
+.question-count input{
+    flex:1;
+    font-size: 18px;
+    border-radius: 20px;
+    padding:10px;
+    margin-left: 5px;
+    background: rgb(231, 241, 245); 
+}
+
+.difficulty-selection difficulty {
+    flex:1;
+    width: 100%;
+    font-size: 18px;
+    border-radius: 20px;
+    padding:10px;
+    margin-left: 5px;
+    background: rgb(231, 241, 245);
+}
+
+.difficulty-selection select{
+    
+    width: 59%;
+    font-size: 18px;
+    border-radius: 20px;
+    padding:10px;
+    margin-left: 5px;
+    background: rgb(231, 241, 245);
+}
+
+.btn{
+    background: white;
+    color: #222;
+    width:100%;
+    font-weight:500;
+    border: 1px solid #222;
+    padding:10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.5s;
+
+}
+.btn:hover{
+    background: yellow;
+    color: #222;
+}
+.correct{
+    background: green;
+    color: black;
+}
+.incorrect{
+    background: red;
+    color: black;
+}
+
+#next-button{
+    background: darkblue;
+    color: aliceblue;
+    width:30%;
+    border-radius: 30px;
+    padding: 10px;
+    border: 1px solid black;
+    font-size: 28px;
+    margin: 20px auto 0;
+    display:none;
+}
+#next-button:hover{
+    background: rgb(209, 245, 5);
+    color: black;
+}
+#next-button1{
+    background: darkblue;
+    color: aliceblue;
+    width:30%;
+    border-radius: 30px;
+    padding: 10px;
+    border: 1px solid black;
+    font-size: 28px;
+    margin: 20px auto 0;
+    display:block;
+}
+#next-button1:hover{
+    background: rgb(209, 245, 5);
+    color: black;
+}
+
+.result{
+    
+background: orange;
+padding:30px;
+border-radius: 20px;
+margin-top: 10px;
+}
+.result h2{
+    color: black;
+    font-size: 30px;
+    font-weight: 600;
+}
+.again{
+    background: white;
+    padding:30px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+.again button{
+    margin-left:120px;
+    font-size: 20px;
+    font-weight: 600;
+    background: black;
+    border-radius: 20px;
+    color: white;
+    width: 50%;
+    padding:20px;
+    transition: all 0.3s;
+    
+}
+.again button:hover{
+    
+    background: green;
+    border-radius: 20px;
+    color: white;
+    padding:20px;
+    
+}

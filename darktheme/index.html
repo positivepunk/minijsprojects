@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            --primarycolor: white;
+            --secondarycolor: black;
+            background: var(--primarycolor);
+            color: var(--secondarycolor);
+        }
+
+        .darktheme {
+            --primarycolor: black;
+            --secondarycolor: white;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: var(--secondarycolor);
+        }
+
+        .navbar ul {
+            background: var(--primarycolor);
+            color: var(--secondarycolor);
+            display: flex;
+            align-items: center;
+            justify-content: right;
+            padding: 0 20px;
+        }
+
+        .navbar li {
+            margin: 10px;
+        }
+
+        .navbar img {
+            width: 30px;
+            cursor: pointer;
+        }
+
+        .container {
+            width: max-content;
+            color: var(--secondarycolor);
+            background: orange;
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">contact</a></li>
+                <li><a href="">support</a></li>
+                <img src="moon.png" alt="" id="theme">
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>This is my webpage</h1>
+    </div>
+    
+    <script>
+        let btn=document.getElementById("theme");
+        btn.onclick=function(){
+            document.body.classList.toggle("darktheme");
+            if(document.body.classList.contains("darktheme")){
+                btn.src="sun.png";
+            }
+            else{
+                btn.src="moon.png";
+            }
+        }
+    </script>
+</body>
+</html>

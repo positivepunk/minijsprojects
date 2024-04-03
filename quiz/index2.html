@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css"></link>
+</head>
+<body>
+    <div class="app">
+        <h1 >Quiz Results</h1>
+    
+    <div class="result">
+        <h2 id="one"></h2>
+        <h2 id="two"> </h2>
+    </div>
+    <div class="again">
+        <button id="return">Once more</button>
+    </div>
+</div>
+    <script>
+         (function main() {
+            const tq = localStorage.getItem("tq");
+            const aq = localStorage.getItem("aq");
+            const tqElement = document.querySelector("#one");
+            const aqElement = document.querySelector("#two");
+            if (tqElement && aqElement) {
+                tqElement.innerText = `Total No of questions: ${tq}`;
+                aqElement.innerText = `No of Questions Answered: ${aq}`;
+            }
+            const againButton = document.querySelector("#return");
+            if (againButton) {
+                againButton.addEventListener("click", function() {
+                    window.location.href = "index.html";
+                });
+            }
+        })();
+    </script>
+</body>
+</html>

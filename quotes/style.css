@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Protest+Strike&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat",sans-serif;
+    box-sizing:border-box;
+}
+
+body{
+    background: #bbc6fa;
+}
+
+.quotebox{
+    background:white;
+    width: 600px;
+    position: absolute;
+    top: 10%;
+    left: 24%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow:  0 5px 20px 0 grey ;
+    padding: 20px ;
+}
+
+.quotebox h2{
+    font-size: 30px;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom:2px solid grey ;
+    position: relative;
+   
+}
+
+.quotebox blockquote::before,.quotebox blockquote::after{
+content: '"';
+}
+
+.quotebox blockquote{
+    font-weight:500;
+    font-size: 20px;
+}
+.quotebox span{
+    float: right;
+    position: relative;
+    font-size: 15px;
+}
+ span::before{
+    content: '__';
+    display: inline-block;
+    width: 15px;
+    height: 2px;
+    color: black;
+    position: absolute;
+    top:-20%;
+    right: 100%;
+    padding-right: 5px;
+    
+}
+
+.quotebox div{
+width: 100%;
+margin-top: 50px;
+display: flex;
+justify-content: center;
+}
+
+.quotebox button{
+    background: rgb(100, 57, 241);
+    width: 175px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content:center ;
+    border-radius: 25px;
+    border: 1px solid black;
+    margin: 5px;
+    color: white;
+}
+
+.quotebox button img{
+    width: 50px;
+}
+
+.quotebox button:nth-child(2){
+    background:transparent ;
+    color: black;
+}
+
+
